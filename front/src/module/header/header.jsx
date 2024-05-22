@@ -1,21 +1,22 @@
 import style from './header.module.css'
+import Input from '../DefaultComponents/input';
+import Button from '../DefaultComponents/button';
+import Paragraph from '../DefaultComponents/paragraph';
 
 function Header() {
     return (
     <>
         <header>
             <div className={style.container}>
-                <img src="" alt="" />
-                <input type="text" />
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <p></p>
+                <Input />
+                <Button width={"40px"} height={"40px"} text={""}/>
+                <Button width={"40px"} height={"40px"}/>
+                <Button width={"40px"} height={"40px"}/>
+                <Button width={"40px"} height={"40px"}/>
+                <Paragraph />
             </div>
             <div className={style.profile}></div>
         </header>
-
     </>);
 }
 
